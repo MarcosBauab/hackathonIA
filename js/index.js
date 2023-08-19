@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "";
 
 let idioma = "inglês"
 let nivel = "básico"
