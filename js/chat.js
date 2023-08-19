@@ -48,4 +48,4 @@ async function sendQuestion(messages){
     }
 }
 
-sendQuestion(messages)
+// sendQuestion(messages)

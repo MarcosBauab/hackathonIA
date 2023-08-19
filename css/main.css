@@ -10,7 +10,7 @@ body{
     width: 100vw;
     height: 100vh;
 
-    background-image: url("/public/fundo.png");
+    background-image: url("../public/fundo.png");
     background-size: 70%; /* Para ajustar a imagem ao tamanho da tela */
     background-repeat: no-repeat;
     background-position: center;
@@ -51,25 +51,7 @@ body{
     border-right: 2px solid rgba(0, 0, 0, 1);
 }
 
-@keyframes typing {
-    from {
-        width: 0; /* Começa com largura zero */
-    }
-    to {
-        width: 14ch; /* Termina com largura total */
-    }
-}
-
-@keyframes blinkingCursor{
-    from {
-        border-right-color: rgba(0, 0, 0, 1); 
-    }
-    to {
-        border-right-color: rgba(0, 0, 0, 0);
-    }
-}
-
-.generateReportBTN {
+#generateReportBTN {
     position: fixed;
     top: 55%;
     left: 50%;
@@ -90,10 +72,29 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.generateReportBTN:hover { 
+#generateReportBTN:hover { 
     opacity: 1;
 }
 
-.generateReportBTN:active {
+#generateReportBTN:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+@keyframes typing {
+    from {
+        width: 0; /* Começa com largura zero */
+    }
+    to {
+        width: 14ch; /* Termina com largura total */
+    }
+}
+
+@keyframes blinkingCursor{
+    from {
+        border-right-color: rgba(0, 0, 0, 1); 
+    }
+    to {
+        border-right-color: rgba(0, 0, 0, 0);
+    }
 }
