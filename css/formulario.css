@@ -1,0 +1,191 @@
+/* Todos os elementos da página */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #fff;
+
+} 
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    margin-top: 20px;
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-image: url("../public/fundo_horizontal.png");
+    background-size: cover; /* Para ajustar a imagem ao tamanho da tela */
+    background-repeat: no-repeat;
+
+    
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    justify-content: center;
+
+    height: 100vh;
+
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: san s-serif;
+    font-size: 1em;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 20px;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.5em;
+    color: #fff;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Botão animado */
+.botao {
+    margin-top: 20px;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #fff;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    opacity: 1;
+    margin-left: 55px;
+    }
+  botao::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #fff;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  .botao:hover, .botao:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  botao:hover::before, botao:focus::before {
+    opacity: 1;
+  }
+  botao:hover::after, botao:focus::after {
+    animation: none;
+    display: none;
+  }
+
+.week-days {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.week-days label {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #333;
+  color: #fff;
+}
+
+#corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    flex-direction: column;
+    border-radius: 10px;
+    width: auto;
+
+
+    margin: 16px 0;
+}
