@@ -18,7 +18,6 @@
 
     <body>  
         <div id="corpo">
-            <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
             <div class="cadastro">
                 <h1 id="titulo">Cadastro de informações</h1>
             </div>
@@ -97,7 +96,7 @@
         
                     <fieldset class="grupo">
                         <label><strong>Tempo de aprendizado:</strong></label><br>
-                        <input class="number-input" type="number" id="numeric-input" name="numeric-input" min="0">
+                        <input class="number-input" type="number" id="learning-time" name="learning-time" min="0">
         
                         <select id="unidade" required>
                           <option selected disabled value="">Selecione</option>
@@ -109,9 +108,9 @@
         
                     <fieldset>
                         <label><strong>Tempo por dia</strong></label><br>
-                        <input class="number-input" type="number" id="numeric-input" name="numeric-input" min="0" max="23">
+                        <input class="number-input" type="number" id="hour" name="hour" min="0" max="23">
                         :
-                        <input class="number-input" type="number" id="numeric-input" name="numeric-input" min="0" max="59">
+                        <input class="number-input" type="number" id="minute" name="minute" min="0" max="59">
                     </fieldset>
                     
                     <div class="campo">

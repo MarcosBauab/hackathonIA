@@ -5,14 +5,11 @@
     padding: 0;
 }
 
-/* Elementos com o ID "titulo" */
 #titulo {
     font-family: sans-serif;
     color: #fff;
 
 } 
-
-
 
 #check{
     display: inline-block;
@@ -26,9 +23,6 @@ fieldset {
 
 /* Elemento de tag <body> */
 body{
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +36,9 @@ body{
     font-size: 1em;
     color: white;
     justify-content: center;
+
+    height: 100vh;
+
 }
 
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
@@ -102,7 +99,7 @@ fieldset.grupo .campo {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #313133;
+    color: #fff;
     background: #4FD1C5;
     background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
     border: none;
@@ -114,6 +111,7 @@ fieldset.grupo .campo {
     position: relative;
     padding: 10px;
     opacity: 1;
+    margin-left: 55px;
     }
   botao::before {
     content: '';
@@ -186,5 +184,8 @@ input[type="checkbox"]:checked + label {
     background-color: rgba(0, 0, 0, .5);
     flex-direction: column;
     border-radius: 10px;
-    width: 50%;
+    width: auto;
+
+
+    margin: 16px 0;
 }
