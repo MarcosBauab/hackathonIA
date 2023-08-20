@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         <!-- CSS -->
-        <link rel="stylesheet" href="../css/formulario.css">
+        <link rel="stylesheet" href="./css/formulario.css">
 
         <!-- Título da página (aparece na aba) -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <title>Cadastro</title>
     </head>
 
@@ -24,24 +24,34 @@
     
             <div>
                 <!-- Início do formulário -->
-                <form>
+                <form action="/form" method="POST">
         
                     <fieldset class="grupo">
                         <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
                         <div class="campo">
                             <label for="nome"><strong>Nome</strong></label>
-                            <input type="text" name="nome" id="nome" required>
+                            <input type="text" name="nome" id="nome" >
                         </div>
                     </fieldset> 
-        
-                    <div class="campo">
-                        <label for="idioma"><strong>Idioma</strong></label>
-                        <select id="idioma" required>
-                          <option selected disabled value="">Selecione</option>
-                          <option>Inglês</option>
-                          <option>Espanhol</option>
-                          <option>Alemão</option>
-                        </select>
+                    <div class="flex">
+                      <div class="campo">
+                          <label for="idioma"><strong>Idioma</strong></label>
+                          <select id="idioma" name="idioma">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Inglês</option>
+                            <option>Espanhol</option>
+                            <option>Alemão</option>
+                          </select>
+                      </div>
+                      <div class="campo">
+                          <label for="objetivo"><strong>Objetivo</strong></label>
+                          <select id="objetivo" name="objetivo">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Entrevista de emprego</option>
+                            <option>Viagem à negócios</option>
+                            <option>Lazer</option>
+                          </select>
+                      </div>
                     </div>
         
         
@@ -49,56 +59,53 @@
                     <div class="campo">
                         <label><strong>Nível: </strong></label>
                         <label>
-                            <input type="radio" name="devweb" value="basico" checked> Básico
+                            <input type="radio" name="nivel" value="basico" checked> Básico
                         </label>
                         <label>
-                            <input type="radio" name="devweb" value="intermediario"> Intermediário
+                            <input type="radio" name="nivel" value="intermediario"> Intermediário
                         </label>
                         <label>
-                            <input type="radio" name="devweb" value="avancado"> Avançado
+                            <input type="radio" name="nivel" value="avancado"> Avançado
                         </label>
                     </div>
-        
-                    <!-- Campo de idioma com 3 opções para escolha (select option) e css de classe "campo" -->
-        
         
                     <label><strong>Dias da semana disponíveis:</strong></label><br>
                     <div class="week-days">
                         <div class="day">
-                          <input type="checkbox" id="day1" name="day1">
+                          <input type="checkbox" id="day1" name="dom">
                           <label for="day1">D</label>
                         </div>
                         <div class="day">
-                          <input type="checkbox" id="day2" name="day2">
+                          <input type="checkbox" id="day2" name="seg">
                           <label for="day2">S</label>
                         </div>
                         <div class="day">
-                          <input type="checkbox" id="day3" name="day3">
+                          <input type="checkbox" id="day3" name="ter">
                           <label for="day3">T</label>
                         </div>
                         <div class="day">
-                          <input type="checkbox" id="day4" name="day4">
+                          <input type="checkbox" id="day4" name="qua">
                           <label for="day4">Q</label>
                         </div>
                         <div class="day">
-                          <input type="checkbox" id="day5" name="day5">
+                          <input type="checkbox" id="day5" name="qui">
                           <label for="day5">Q</label>
                         </div>
                         <div class="day">
-                          <input type="checkbox" id="day6" name="day6">
+                          <input type="checkbox" id="day6" name="sex">
                           <label for="day6">S</label>
                         </div>
                         <div class="day">
-                          <input type="checkbox" id="day7" name="day7">
+                          <input type="checkbox" id="day7" name="sab">
                           <label for="day7">S</label>
                         </div>
                       </div>
         
                     <fieldset class="grupo">
                         <label><strong>Tempo de aprendizado:</strong></label><br>
-                        <input class="number-input" type="number" id="learning-time" name="learning-time" min="0">
+                        <input class="number-input" type="number" id="tempo-aprendizado" name="tempo-aprendizado" min="0">
         
-                        <select id="unidade" required>
+                        <select id="unidade" name="unidade">
                           <option selected disabled value="">Selecione</option>
                           <option>Dias</option>
                           <option>Semanas</option>
@@ -108,9 +115,9 @@
         
                     <fieldset>
                         <label><strong>Tempo por dia</strong></label><br>
-                        <input class="number-input" type="number" id="hour" name="hour" min="0" max="23">
+                        <input class="number-input" type="number" id="horas" name="horas" min="0" max="23">
                         :
-                        <input class="number-input" type="number" id="minute" name="minute" min="0" max="59">
+                        <input class="number-input" type="number" id="minutos" name="minutos" min="0" max="59">
                     </fieldset>
                     
                     <div class="campo">
