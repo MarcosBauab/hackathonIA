@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/formulario.css">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Cadastro de informações</h1>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label for="idioma"><strong>Idioma</strong></label>
+                <select id="idioma" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Inglês</option>
+                  <option>Espanhol</option>
+                  <option>Alemão</option>
+                </select>
+            </div>
+
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Nível: </strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="basico" checked> Básico
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="intermediario"> Intermediário
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="avancado"> Avançado
+                </label>
+            </div>
+
+            <!-- Campo de idioma com 3 opções para escolha (select option) e css de classe "campo" -->
+
+
+            <label><strong>Dias da semana disponíveis:</strong></label><br>
+            <div class="week-days">
+                <div class="day">
+                  <input type="checkbox" id="day1" name="day1">
+                  <label for="day1">D</label>
+                </div>
+                <div class="day">
+                  <input type="checkbox" id="day2" name="day2">
+                  <label for="day2">S</label>
+                </div>
+                <div class="day">
+                  <input type="checkbox" id="day3" name="day3">
+                  <label for="day3">T</label>
+                </div>
+                <div class="day">
+                  <input type="checkbox" id="day4" name="day4">
+                  <label for="day4">Q</label>
+                </div>
+                <div class="day">
+                  <input type="checkbox" id="day5" name="day5">
+                  <label for="day5">Q</label>
+                </div>
+                <div class="day">
+                  <input type="checkbox" id="day6" name="day6">
+                  <label for="day6">S</label>
+                </div>
+                <div class="day">
+                  <input type="checkbox" id="day7" name="day7">
+                  <label for="day7">S</label>
+                </div>
+              </div>
+
+            <fieldset class="grupo">
+                <label><strong>Tempo de aprendizado:</strong></label><br>
+                <input class="number-input" type="number" id="numeric-input" name="numeric-input" min="0">
+
+                <select id="unidade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Dias</option>
+                  <option>Semanas</option>
+                  <option>Meses</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label><strong>Tempo por dia</strong></label><br>
+                <input class="number-input" type="number" id="numeric-input" name="numeric-input" min="0" max="23">
+                :
+                <input class="number-input" type="number" id="numeric-input" name="numeric-input" min="0" max="59">
+            </fieldset>
+            
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+            
+
+        </form>
+
+    </body>
+
+</html>
