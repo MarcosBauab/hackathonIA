@@ -1,5 +1,6 @@
 /* Todos os elementos da página */
-* {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -7,8 +8,8 @@
 /* Elementos com o ID "titulo" */
 #titulo {
     font-family: sans-serif;
-    color: #02B2A0;
-    margin-left: 7%;
+    color: #fff;
+
 } 
 
 
@@ -19,15 +20,18 @@
 
 /* Elementos de tag <fieldset>*/
 fieldset {
+    margin-top: 20px;
     border: 0;
 }
 
 /* Elemento de tag <body> */
 body{
-    padding: 16px;
-
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
     background-image: url("../public/fundo_horizontal.png");
     background-size: cover; /* Para ajustar a imagem ao tamanho da tela */
@@ -36,9 +40,7 @@ body{
     
     font-family: sans-serif;
     font-size: 1em;
-    color: #02B2A0;
-    margin-left: 36%;
-    margin-top: 2%;
+    color: white;
     justify-content: center;
 }
 
@@ -46,7 +48,7 @@ body{
 input, select, textarea, button {
     font-family: san s-serif;
     font-size: 1em;
-    color: #02B2A0;
+    color: black;
     border-radius: 5px;
 }
 
@@ -62,26 +64,25 @@ input, select, textarea, button {
 
 /* Elementos de classe "campo" */
 .campo {
-    margin-bottom: 2em;
+    margin-bottom: 20px;
 }
 
 /* Elementos de classe "campo" de tag <label> */
 .campo label {
     margin-bottom: 0.5em;
-    color: #02B2A0;
+    color: #fff;
     display: block;
 }
 
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo {
     float:  left;
-    margin-right: 1em;
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
-    border: 1px solid #02B2A0;
+    border: 1px solid #fff;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
@@ -91,14 +92,9 @@ fieldset.grupo .campo {
     padding-right: 1em;
 }
 
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
-}
-
 /* Botão animado */
 .botao {
-    margin-top: 100px;
+    margin-top: 20px;
     min-width: 300px;
     min-height: 60px;
     font-family: 'Nunito', sans-serif;
@@ -124,7 +120,7 @@ fieldset.grupo .campo {
     border-radius: 1000px;
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #02B2A0;
+    border: 6px solid #fff;
     box-shadow: 0 0 60px rgba(0,255,203,.64);
     position: absolute;
     top: 50%;
@@ -146,8 +142,11 @@ fieldset.grupo .campo {
   }
 
 .week-days {
+  margin-top: 10px;
   display: flex;
   gap: 10px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .day {
@@ -177,4 +176,15 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label {
   background-color: #333;
   color: #fff;
+}
+
+#corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50%;
 }
