@@ -98,9 +98,9 @@ const advanced = `
 
 // - Setting enviroment
 //Test
-let language = ''
-let level = ''
-let goal = ''
+let language = "Inglês"
+let level = "Básico"
+let goal = "Entrevista de emprego"
 let promptToOrder = `Ordene os tópicos salvos de estudo de ${language} de nível ${level} com base na importância e relevância para se preparar para ${goal} seguindo uma ordem de estudo relacionada ao contexto do ${goal}. 
                     Garanta uma ordem consistente para que a classificação seja uniforme em todas as consultas. 
                     Após a análise dos dados, liste os itens ordenados de acordo com a classificação determinada e implemente a descrição de cada tópico com base no contexto ${goal}.
@@ -151,10 +151,11 @@ async function orderTopicsByParameters() {
 
 // - Configure timeline
 //Test
-let timeToFinish = ''
-let daysToStudy = ''
-let timePerDay = ''
-let profile = ''
+let timeToFinish = "4 semanas"
+let daysToStudy = "Segunda-feira, Terça-feira"
+let timePerDay = "60 minutos"
+let profile = `Me chamo Otávio, tenho 17 anos e ainda estou no ensino médio e estou em busca da minha primeira oportunidade de emprego, gosto muito de séries de comédia e da lingua inglesa, quero aprender ingles para poder conseguir meu primeiro emprego e de preferência na área da saúde
+               pois tenho vontade de cursar medicina futuramente`
 const orderedTopics = orderTopicsByParameters()
 const promptToJSON = `Sua missão é gerar um cronograma de estudos com base nas seguintes informações:
                       - Tópicos ordenados por relvancia: ${orderedTopics}

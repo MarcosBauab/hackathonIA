@@ -1,0 +1,198 @@
+1- Itens necessários para cada objetivo:
+    Exemplo entrevista de emprego nível intermediário:
+    Simple Present: Formation and usage of simple present tense, affirmative, negative, and interrogative sentences.
+    Present Continuous: Forming present continuous tense, using it to describe ongoing actions.
+    Adverbs: Different types of adverbs, adverbs of frequency, adverbs of manner, adverbs of place, adverbs of time.
+    Simple Past: Formation and usage of simple past tense, regular and irregular verbs.
+    There Was/There Were: Using 'there was' and 'there were' to describe existence.
+    Simple Past Continuous: Forming and using past continuous tense to describe ongoing actions in the past.
+    Past Perfect: Understanding and applying past perfect tense.
+    Passive Voice: Formation of passive voice, changing active sentences into passive.
+    Word Order: Sentence structure and word order in English.
+    False Cognates: Identifying and understanding false cognates.
+    Reported Speech: Transforming direct speech into reported speech, changes in tenses and pronouns.
+    Adverbs: Exploring adverbs of degree, frequency, manner, place, and time.
+    Future Continuous: Understanding and using future continuous tense.
+    Simple Future: Formation and use of simple future tense.
+    Simple Conditional: Formation and usage of simple conditional sentences.
+    Conjunctions: Different types of conjunctions and their usage in sentences.
+    If/Whether: Differentiating between 'if' and 'whether' in sentences.
+    Phrasal Verbs I: Introduction to phrasal verbs and their meanings.
+    Phrasal Verbs II: Advanced phrasal verbs and their contexts.
+    The Imperative/The Infinitive: Using the imperative mood and infinitive forms of verbs.
+    Many/Much/Few/Little: Usage of quantifiers.
+    Present Perfect: Understanding the present perfect tense, its usage for past actions with present relevance.
+    Present Perfect Continuous: Usage and formation of present perfect continuous tense.
+    Revision with Texts: Review and practice through reading comprehension.
+    Revision with Texts: Review and practice through reading comprehension.
+    
+2 - Itens por nível:
+    Iniciante - 
+    Alphabet and Numbers: Learning the pronunciation of alphabet letters and basic numbers.
+    Greetings: Expressions for greeting and bidding farewell in different situations.
+    Pronouns: Introduction to personal pronouns (I, you, he/she/it, we, they).
+    Verbs: Basic forms of verbs (to be, to have, to do), regular and irregular verbs in the present.
+    Articles: Use of definite articles (the) and indefinite articles (a, an).
+    Nouns: Identification of nouns and their gender (masculine/feminine).
+    Adjectives: Basic understanding of adjectives for simple descriptions.
+    Days, Hours, and Dates: Names of the days of the week, expression of hours, and basic dates.
+    Colors: Names of basic colors and their descriptions.
+    Food: Vocabulary related to simple foods and beverages.
+    Everyday Expressions: Useful phrases for everyday situations.
+
+    Intermediário -  
+    Adverbs 1: Different types of adverbs, adverbs of frequency, adverbs of manner, adverbs of place, adverbs of time.
+    Simple Present: Formation and usage of simple present tense, affirmative, negative, and interrogative sentences.
+    Present Continuous: Forming present continuous tense, using it to describe ongoing actions.
+    Present Perfect: Understanding the present perfect tense, its usage for past actions with present relevance.
+    Present Perfect Continuous: Usage and formation of present perfect continuous tense.
+    Reported Speech: Transforming direct speech into reported speech, changes in tenses and pronouns.
+    Revision with Texts: Review and practice through reading comprehension.
+    Adverbs 2: Exploring adverbs of degree, frequency, manner, place, and time.
+    Simple Past: Formation and usage of simple past tense, regular and irregular verbs.
+    There Was/There Were: Using 'there was' and 'there were' to describe existence.
+    Simple Past Continuous: Forming and using past continuous tense to describe ongoing actions in the past.
+    Past Perfect: Understanding and applying past perfect tense.
+    Passive Voice: Formation of passive voice, changing active sentences into passive.
+    Word Order: Sentence structure and word order in English.
+    False Cognates: Identifying and understanding false cognates.
+    Revision with Texts: Review and practice through reading comprehension.
+    Conjunctions: Different types of conjunctions and their usage in sentences.
+    Simple Future: Formation and use of simple future tense.
+    Future Continuous: Understanding and using future continuous tense.
+    Simple Conditional: Formation and usage of simple conditional sentences.
+    If/Whether: Differentiating between 'if' and 'whether' in sentences.
+    Phrasal Verbs I: Introduction to phrasal verbs and their meanings.
+    Phrasal Verbs II: Advanced phrasal verbs and their contexts.
+    The Imperative/The Infinitive: Using the imperative mood and infinitive forms of verbs.
+    Many/Much/Few/Little: Usage of quantifiers.
+    Revision with Texts: Review and practice through reading comprehension.
+    
+    Avançado -
+    Also/Too/Either/Neither/Both: Usage and differences between these expressions.
+    Relative Clauses: Understanding and forming relative clauses in sentences.
+    The Possessive Case: In-depth study of the possessive case.
+    Had Better/Would Rather: Exploring the use of these expressions for advice and preferences.
+    Anomalous Verbs 1: Study of irregular verb forms.
+    Anomalous Verbs 2: Further exploration of irregular verbs and their forms.
+    The Gerund: Comprehensive understanding and usage of gerund forms.
+    Reading and Comprehension: Advanced reading exercises for deeper comprehension.
+    Oral Production: Practice in spoken language to enhance fluency.
+    Written Production: Developing complex writing skills for various purposes.
+    Listening Production: Advanced listening exercises to improve comprehension.
+    TOEFL Preparation: Modules specifically tailored for TOEFL exam skills.
+        Leitura: Exercises focused on TOEFL reading skills.
+        Prática Auditiva: Listening exercises for TOEFL-style audio content.
+        Conversação: Speaking practice and strategies for TOEFL speaking tasks.
+        Escrita: Writing tasks that align with TOEFL writing requirements.
+        Simulados: Mock TOEFL test simulations for overall preparation.
+        Preparação para o TOEFL:
+        Leitura: Exercícios focados nas habilidades de leitura do TOEFL.
+        Prática Auditiva: Exercícios de escuta para conteúdo de áudio no estilo do TOEFL.
+        Conversação: Prática de fala e estratégias para as tarefas de fala do TOEFL.
+        Escrita: Tarefas de escrita alinhadas com os requisitos de escrita do TOEFL.
+        Simulados: Simulações de testes do TOEFL para preparação geral.
+
+
+2 - Exemplo resposta json:
+    Idioma: Inglês,
+    Nível: Intermediário,
+    Objetivo: Entrevista de emprego,
+    Tempo para o curso: 2 semanas,
+    Dias disponíveis: Segunda, Terça, Quinta,
+    Tempo disponível por dia: 20 minutos,
+    Conversa com usuário (Seção conte-me mais): Sou estudante de ciência da computação, trabalho com sistemas embarcados em uma empresa de aviação
+                                                  e tenho grande interesse em desenvolvimento de sofware e programação e esse é meu principal hobbie, 
+                                                  gosto bastante de filmes e o principal objetivo de estudar inglês é aprimorar meus conhecimentos
+                                                  e buscar uma oportunidade de emprego internacional.
+    json:
+    {
+        "week 1": {
+            "day 1": {
+                "time": "20 minutos",
+                "subject": "Presente Simples: Formação e uso do tempo presente simples, frases afirmativas, negativas e interrogativas.",   
+                "activities": [
+                    {
+                        "content": "Ver material teórico"
+                    }
+                    {
+                        "content": "Fazer exercícios"
+                    }
+                ]
+            },
+            "day 2": {
+                "time": "20 minutos",
+                "subject": "Passado Simples: Formação e uso do tempo passado simples, verbos regulares e irregulares."
+                "activities": [
+                    {
+                        "content": "Ver material teórico"
+                    }
+                    {
+                        "content": "Fazer exercícios"
+                    }
+                ]
+            },
+            "day 3": {
+                "time": "20 minutos",
+                "subject": "Presente Contínuo: Formação do tempo presente contínuo e seu uso para descrever ações em andamento."
+                "activities": [
+                    {
+                        "content": "Ver material teórico"
+                    }
+                    {
+                        "content": "Fazer exercícios"
+                    }
+                ]
+            }
+        },
+ 
+        "week 2": {
+            "day 1": {
+                "time": "20 minutos",
+                "subject": "Advérbios: Diferentes tipos de advérbios, advérbios de frequência, advérbios de modo, advérbios de lugar, advérbios de tempo."
+                "activities": [
+                    {
+                        "content": "Ver material teórico"
+                    }
+                    {
+                        "content": "Fazer exercícios"
+                    }
+                ]
+            },
+            "day 2": {
+                "time": "20 minutos",
+                "subject": "Ordem das Palavras: Estrutura de frases e ordem das palavras em inglês."
+                "activities": [
+                    {
+                        "content": "Ver material teórico"
+                    }
+                    {
+                        "content": "Fazer exercícios"
+                    }
+                ]
+            },
+            "day 3": {
+                "time": "20 minutos",
+                "subject": "Conversação: Fala e Escuta"
+                "activities": [
+                    {
+                        "content": "Praticar speaking"
+                    }
+                    {
+                        "content": "Praticar listening"
+                    }
+                ]
+            }
+        }
+        "recomendations": {
+            Aqui esta seu cronograma!! organizado com base no seu tempo disponível e seu objetivo de se preparar para as suas entrevistas de emprego, 
+            vale ressaltar que é interessante atrelar seus estudos ao tema e área de atuação das diferentes empresas das quais for fazer entrevista.
+            Além disso, para auxliar nos seus estudos, pode ser que você goste desses conteúdos:
+            • Jobs (2013) um filme biográfico sobre a vida de Steve Jobs, que pode ser uma fonte de motivação pra você que deseja ter sucesso na industria de tecnologia e praticar seu Listening
+            • Participar de discussões em fóruns como o Stack Overflow vai te auxiliar a resolver problemas de programação enquanto aprimora sua comunicação em inglês técnico.
+            • Para aprimorar sua escrita, você pode escrever artigos sobre programação em inglês e publicar em plataformas como o Medium, assim você pratica sua escrita e compartilha conhecimento com a comunidade.
+        }
+    }
+
+
+**Seção conte-me mais = Para uma experiência mais personalizada e direcionada a voce estudante, me conte um pouco sobre voce como idade, profissao, objetivos, gostos e hobbies

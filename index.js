@@ -1,6 +1,6 @@
 // Importe a biblioteca dotenv e carregue as variáveis de ambiente
 require('dotenv').config();
-require('./js/chat')
+require('./js/preview-chat')
 
 // Agora você pode acessar as variáveis definidas no arquivo .env usando process.env
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
