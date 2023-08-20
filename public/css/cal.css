@@ -64,7 +64,7 @@ table {
   width: 100%;
 }
 
-td, th {
+td, th, div#recomendations {
   padding: 10px 15px;
   border: 1px solid #DDD;
   text-align: center;

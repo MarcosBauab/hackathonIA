@@ -8,6 +8,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 const express = require('express')
 const sqlite3 = require('sqlite3');
+const divideTopics = require('./js/preview-chat');
 
 const app = express()
 
@@ -19,6 +20,16 @@ const db = new sqlite3.Database('db.sqlite');
 app.get('/', function (req, res) {
     res.sendFile('index.html', {root: __dirname});
 })
+
+app.get('/api', async (req, res) => {
+    try {
+      const json = await divideTopics();
+      res.json(json);
+    } catch (error) {
+      console.error('Erro na requisição:', error);
+      res.status(500).json({ error: 'Erro interno do servidor' });
+    }
+  });
 
 app.post('/form', function (req, res) {
     const { seg, ter, qua, qui, sex, sab, dom, nome, idioma, objetivo, nivel, ['tempo-aprendizado']: tempoAprendizado, unidade, horas, minutos, sobre } = req.body;

@@ -172,6 +172,7 @@ const promptToJSON = `Sua missão é gerar um cronograma de estudos com base nas
                       Não recomende softwares de aprendizado de idiomas, ou conversação, pois esse não é o objetivo.
                       As recomendações devem se ater aos tópicos e caracteristicas do perfil disponibilizado.
                       Os tópicos contidos no subject devem ser os presentes na lista de tópicos ${orderedTopics}.
+                      O JSON deve conter {} no início e final, obrigatóriamente.
                       O cronograma deve estar em um formato json que siga o estritamente a estrutura do seguinte exemplo:
                       // -- Exemplo -- 
                       Exemplo resposta:
@@ -188,91 +189,84 @@ const promptToJSON = `Sua missão é gerar um cronograma de estudos com base nas
                                                                     e buscar uma oportunidade de emprego internacional.
                       json:
                       {
-                          "week 1": {
-                              "Segunda-feira": {
-                                  "time": "20 minutos",
-                                  "subject": "Presente Simples: Formação e uso do tempo presente simples, frases afirmativas, negativas e interrogativas.",   
-                                  "activities": [
-                                      {
-                                          "content": "Ver material teórico"
-                                      }
-                                      {
-                                          "content": "Fazer exercícios"
-                                      }
-                                  ]
-                              },
-                              "Terça-feira": {
-                                  "time": "20 minutos",
-                                  "subject": "Passado Simples: Formação e uso do tempo passado simples, verbos regulares e irregulares."
-                                  "activities": [
-                                      {
-                                          "content": "Ver material teórico"
-                                      }
-                                      {
-                                          "content": "Fazer exercícios"
-                                      }
-                                  ]
-                              },
-                              "Quinta-feira": {
-                                  "time": "20 minutos",
-                                  "subject": "Presente Contínuo: Formação do tempo presente contínuo e seu uso para descrever ações em andamento."
-                                  "activities": [
-                                      {
-                                          "content": "Ver material teórico"
-                                      }
-                                      {
-                                          "content": "Fazer exercícios"
-                                      }
-                                  ]
-                              }
-                          },
-                  
-                          "week 2": {
-                              "Segunda-feira": {
-                                  "time": "20 minutos",
-                                  "subject": "Advérbios: Diferentes tipos de advérbios, advérbios de frequência, advérbios de modo, advérbios de lugar, advérbios de tempo."
-                                  "activities": [
-                                      {
-                                          "content": "Ver material teórico"
-                                      }
-                                      {
-                                          "content": "Fazer exercícios"
-                                      }
-                                  ]
-                              },
-                              "Terça-feira": {
-                                  "time": "20 minutos",
-                                  "subject": "Ordem das Palavras: Estrutura de frases e ordem das palavras em inglês."
-                                  "activities": [
-                                      {
-                                          "content": "Ver material teórico"
-                                      }
-                                      {
-                                          "content": "Fazer exercícios"
-                                      }
-                                  ]
-                              },
-                              "Quinta-feira": {
-                                  "time": "20 minutos",
-                                  "subject": "Conversação: Fala e Escuta"
-                                  "activities": [
-                                      {
-                                          "content": "Praticar speaking"
-                                      }
-                                      {
-                                          "content": "Praticar listening"
-                                      }
-                                  ]
-                              }
-                          }
-                          "recomendations": {
-                              Aqui esta seu cronograma!! organizado com base no seu tempo disponível e seu objetivo de se preparar para as suas entrevistas de emprego, 
-                              vale ressaltar que é interessante atrelar seus estudos ao tema e área de atuação das diferentes empresas das quais for fazer entrevista.
-                              Além disso, para auxliar nos seus estudos, pode ser que você goste desses conteúdos:
-                              • Jobs (2013) um filme biográfico sobre a vida de Steve Jobs, que pode ser uma fonte de motivação pra você que deseja ter sucesso na industria de tecnologia e praticar seu Listening
-                              • Participar de discussões em fóruns como o Stack Overflow vai te auxiliar a resolver problemas de programação enquanto aprimora sua comunicação em inglês técnico.
-                              • Para aprimorar sua escrita, você pode escrever artigos sobre programação em inglês e publicar em plataformas como o Medium, assim você pratica sua escrita e compartilha conhecimento com a comunidade.
-                          }
+                        "weekOne": {
+                            "Segunda-feira": {
+                                "weekDay": "Segunda-feira",
+                                "time": "20 minutos",
+                                "subject": "Presente Simples: Formação e uso do tempo presente simples, frases afirmativas, negativas e interrogativas.",
+                                "activities": [{
+                                        "content": "Ver material teórico"
+                                    },
+                                    {
+                                        "content": "Fazer exercícios"
+                                    }
+                                ]
+                            },
+                            "Terça-feira": {
+                                "weekDay": "Terça-feira",
+                                "time": "20 minutos",
+                                "subject": "Passado Simples: Formação e uso do tempo passado simples, verbos regulares e irregulares.",
+                                "activities": [{
+                                        "content": "Ver material teórico"
+                                    },
+                                    {
+                                        "content": "Fazer exercícios"
+                                    }
+                                ]
+                            },
+                            "Quinta-feira": {
+                                "weekDay": "Quinta-feira",
+                                "time": "20 minutos",
+                                "subject": "Presente Contínuo: Formação do tempo presente contínuo e seu uso para descrever ações em andamento.",
+                                "activities": [{
+                                        "content": "Ver material teórico"
+                                    },
+                                    {
+                                        "content": "Fazer exercícios"
+                                    }
+                                ]
+                            }
+                        },
+                    
+                        "weekTwo": {
+                            "Segunda-feira": {
+                                "weekDay": "Segunda-feira",
+                                "time": "20 minutos",
+                                "subject": "Advérbios: Diferentes tipos de advérbios, advérbios de frequência, advérbios de modo, advérbios de lugar, advérbios de tempo.",
+                                "activities": [{
+                                        "content": "Ver material teórico"
+                                    },
+                                    {
+                                        "content": "Fazer exercícios"
+                                    }
+                                ]
+                            },
+                            "Terça-feira": {
+                                "weekDay": "Terça-feira",
+                                "time": "20 minutos",
+                                "subject": "Ordem das Palavras: Estrutura de frases e ordem das palavras em inglês.",
+                                "activities": [{
+                                        "content": "Ver material teórico"
+                                    },
+                                    {
+                                        "content": "Fazer exercícios"
+                                    }
+                                ]
+                            },
+                            "Quinta-feira": {
+                                "weekDay": "Quinta-feira",
+                                "time": "20 minutos",
+                                "subject": "Conversação: Fala e Escuta",
+                                "activities": [{
+                                        "content": "Praticar speaking"
+                                    },
+                                    {
+                                        "content": "Praticar listening"
+                                    }
+                                ]
+                            }
+                        },
+                        "recomendations": "Aqui esta seu cronograma!!organizado com base no seu tempo disponível e seu objetivo de se preparar para as suas entrevistas de emprego, vale ressaltar que é interessante atrelar seus estudos ao tema e área de atuação das diferentes empresas das quais for fazer entrevista. Além disso, para auxliar nos seus estudos, pode ser que você goste desses conteúdos: •Jobs(2013) um filme biográfico sobre a vida de Steve Jobs, que pode ser uma fonte de motivação pra você que deseja ter sucesso na industria de tecnologia e praticar seu Listening• Participar de discussões em fóruns como o Stack Overflow vai te auxiliar a resolver problemas de programação enquanto aprimora sua comunicação em inglês técnico.•Para aprimorar sua escrita, você pode escrever artigos sobre programação em inglês e publicar em plataformas como o Medium, assim você pratica sua escrita e compartilha conhecimento com a comunidade."
                       }
                       Note que acima esta apenas um exemplo hipotético de perfil e parametros. Você deve construir o json utilizando os itens e tópicos de ${orderedTopics} visando preencher o período de estudo seguindo a ordem de relevância predefinida na lista.
                       Sua resposta deve conter apenas o json.`
