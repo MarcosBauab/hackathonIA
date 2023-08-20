@@ -1,4 +1,7 @@
-const OPENAI_API_KEY = "";
+require('dotenv').config();
+
+// Agora você pode acessar as variáveis definidas no arquivo .env usando process.env
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 let idioma = "inglês"
 let nivel = "básico"
@@ -12,40 +15,72 @@ let messages = [
     {"role": "system", "content": promptCronograma},
 ]
 
-async function sendQuestion(messages){
-    try {
-        const response = await fetch("https://api.openai.com/v1/chat/completions", {
-        method: "POST",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + OPENAI_API_KEY,
-        },
-        body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: messages,
-            max_tokens: 2048,
-            temperature: 0.5,
-        }),
-        });
-    
-        console.log("teste")
-    
-        if (!response.ok) {
-        throw new Error(`Request failed with status: ${response.status}`);
-        }
-    
-        const json = await response.json();
-    
-        if (json.error?.message) {
-        console.error(`Error: ${json.error.message}`);
-        } else if (json.choices?.[0].message) {
-        const message = json.choices[0].message || "Sem resposta";
-        console.log("Chat GPT:", message.content);
-        }
-    } catch (error) {
-        console.error("Error:", error);
+const axios = require('axios');
+
+async function makePostRequestWithParameters() {
+
+    const headers = {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + OPENAI_API_KEY,
     }
+
+    const data = JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: messages,
+        max_tokens: 2048,
+        temperature: 0.5,
+    })
+
+  try {
+    const response = await axios.post('https://api.openai.com/v1/chat/completions', data, {headers});
+
+    console.log(response.data.choices[0].message.content)
+    // let json = response.data.json()
+    // const message = json.choices[0].message || "Sem resposta";
+    // console.log("Chat GPT:", message.content);
+  } catch (error) {
+    console.error('Erro na requisição:', error);
+  }
 }
+
+makePostRequestWithParameters();
+
+
+// async function sendQuestion(messages){
+//     try {
+//         const response = await fetch("https://api.openai.com/v1/chat/completions", {
+//         method: "POST",
+//         headers: {
+//             Accept: "application/json",
+//             "Content-Type": "application/json",
+//             Authorization: "Bearer " + OPENAI_API_KEY,
+//         },
+//         body: JSON.stringify({
+//             model: "gpt-3.5-turbo",
+//             messages: messages,
+//             max_tokens: 2048,
+//             temperature: 0.5,
+//         }),
+//         });
+    
+//         console.log("teste")
+    
+//         if (!response.ok) {
+//         throw new Error(`Request failed with status: ${response.status}`);
+//         }
+    
+//         const json = await response.json();
+    
+//         if (json.error?.message) {
+//         console.error(`Error: ${json.error.message}`);
+//         } else if (json.choices?.[0].message) {
+//         const message = json.choices[0].message || "Sem resposta";
+//         console.log("Chat GPT:", message.content);
+//         }
+//     } catch (error) {
+//         console.error("Error:", error);
+//     }
+// }
 
 // sendQuestion(messages)
