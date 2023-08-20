@@ -1,6 +1,6 @@
 //Unit tests for oerderTopicsByParameters function
 describe('orderTopicsByParameters', () => {
-  const OPENAI_API_KEY = "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"
+  const OPENAI_API_KEY = ""
   const basic =   `
                   Tópico 1: Assunto 1
                   Tópico 2: Assunto 2
