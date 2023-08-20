@@ -1,23 +1,31 @@
 const sqlite3 = require('sqlite3').verbose();
 
 // Crie uma conexão com o banco de dados
-const db = new sqlite3.Database('database.sqlite');
+const db = new sqlite3.Database('db.sqlite');
 
-// Execute uma consulta para recuperar todos os registros
-const query = 'SELECT * FROM preferencias';
+const processRow = row => {
+  return row; // ou faça qualquer processamento necessário
+};
 
-db.all(query, (error, rows) => {
-  if (error) {
-    console.error('Erro ao recuperar dados:', error);
-    return;
-  }
+const getAllRows = () => {
+  return new Promise((resolve, reject) => {
+    const query = 'SELECT * FROM preferencias';
 
-  // Processar os resultados
-  console.log('Registros recuperados:');
-  rows.forEach(row => {
-    console.log(row);
+    db.all(query, (error, rows) => {
+      if (error) {
+        console.error('Erro ao recuperar dados:', error);
+        return reject(error);
+      }
+
+      // Processar os resultados
+      const arrRows = rows.map(processRow);
+
+      // Feche a conexão com o banco de dados após a recuperação
+      db.close();
+
+      resolve(arrRows);
+    });
   });
+};
 
-  // Feche a conexão com o banco de dados após a recuperação
-  db.close();
-});
+module.exports = getAllRows;

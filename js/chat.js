@@ -40,6 +40,19 @@ const headers = {
   Authorization: "Bearer " + OPENAI_API_KEY,
 }
 
+const getAllRows = require('./recover');
+
+let row = ""
+
+getAllRows()
+  .then(rows => {
+    console.log('Registros recuperados:');
+    row = rows[rows.length - 1]
+  })
+  .catch(error => {
+    console.error('Erro:', error);
+  });
+
 const basic = `   
             Principais tópicos de nível básico:
             Alphabet and Numbers: Learning the pronunciation of alphabet letters and basic numbers.
